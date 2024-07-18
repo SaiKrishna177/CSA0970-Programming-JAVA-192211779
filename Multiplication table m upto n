@@ -1,34 +1,11 @@
 import java.util.Scanner;
-class A extends Thread
-{
-    public void run()
-    {
-        int n=5;
-        for(int i=1;i<=n;i++)
+public class Main {
+    public static void main(String[] args) {
+        int M=4;
+        int N=5;
+        for(int i=1;i<=N;i++)
         {
-            System.out.println(n+" X "+i+" = "+(n*i));
+            System.out.println(i+"x"+M+"="+(i*M));
         }
     }
-}
-class B extends Thread
-{
-    public void run()
-    {
-        int n=10;
-        for(int i=1;i<=n;i++)
-        {
-            System.out.println(n+" X "+i+" = "+(n*i));
-        }
     }
-}
-class ak
-{
-    public static void main(String[] args)
-    {
-        Scanner input=new Scanner(System.in);
-        A threadA=new A();
-        B threadB=new B();
-        threadA.start();
-        threadB.start();
-    }
-}
